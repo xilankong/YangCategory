@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'YangCategory_Example' do
+  pod 'YangCategory', :path => '../'
+
+  target 'YangCategory_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
