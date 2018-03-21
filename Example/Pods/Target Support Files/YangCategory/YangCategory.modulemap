@@ -1,0 +1,6 @@
+framework module YangCategory {
+  umbrella header "YangCategory-umbrella.h"
+
+  export *
+  module * { export * }
+}

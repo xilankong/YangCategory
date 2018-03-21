@@ -1,0 +1,31 @@
+{
+  "name": "YangCategory",
+  "version": "0.1.0",
+  "summary": "A short description of YangCategory.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/xilankong/YangCategory",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "xilankong": "young.huang@jfz.com"
+  },
+  "source": {
+    "git": "https://github.com/xilankong/YangCategory.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "subspecs": [
+    {
+      "name": "UIKit",
+      "source_files": "YangCategory/Classes/UIKit/**/*"
+    },
+    {
+      "name": "Foundation",
+      "source_files": "YangCategory/Classes/Foundation/**/*"
+    }
+  ]
+}

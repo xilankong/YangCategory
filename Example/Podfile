@@ -2,7 +2,7 @@ use_frameworks!
 
 target 'YangCategory_Example' do
   pod 'YangCategory', :path => '../'
-
+  pod 'SnapKit'
   target 'YangCategory_Tests' do
     inherit! :search_paths
 

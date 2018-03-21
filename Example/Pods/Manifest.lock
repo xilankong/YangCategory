@@ -1,0 +1,23 @@
+PODS:
+  - SnapKit (4.0.0)
+  - YangCategory (0.1.0):
+    - YangCategory/Foundation (= 0.1.0)
+    - YangCategory/UIKit (= 0.1.0)
+  - YangCategory/Foundation (0.1.0)
+  - YangCategory/UIKit (0.1.0)
+
+DEPENDENCIES:
+  - SnapKit
+  - YangCategory (from `../`)
+
+EXTERNAL SOURCES:
+  YangCategory:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  YangCategory: 4a6f3c769fc021f9f57c1fca01accce35f4cfd22
+
+PODFILE CHECKSUM: 8ff1664ae9f6fcc353890b664497c8d6e247f51e
+
+COCOAPODS: 1.2.1
