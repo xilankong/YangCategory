@@ -17,12 +17,13 @@ YangCategory is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
+source 'https://github.com/xilankong/YangSpecs.git'
 pod 'YangCategory'
 ```
 
 ## Author
 
-xilankong, young.huang@jfz.com
+xilankong, xilankong@126.com
 
 ## License
 

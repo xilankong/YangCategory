@@ -9,7 +9,7 @@ TODO: Add long description of the pod here.
 
   s.homepage         = 'https://github.com/xilankong/YangCategory'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'xilankong' => 'young.huang@jfz.com' }
+  s.author           = { 'xilankong' => 'xilankong@126.com' }
   s.source           = { :git => 'https://github.com/xilankong/YangCategory.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
