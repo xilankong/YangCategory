@@ -1,6 +1,5 @@
 //
 //  UIWindow+Extension.swift
-//  CryptoSwift
 //
 //  Created by lbencs on 24/01/2018.
 //
