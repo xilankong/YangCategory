@@ -30,7 +30,7 @@ struct MyRegex {
     }
     
     func match(input: String) -> Bool {
-        if let matches = regex?.matches(in: input, options: [], range: NSRange(location: 0, length: input.length)) {
+        if let matches = regex?.matches(in: input, options: [], range: NSRange(location: 0, length: input.count)) {
             return matches.count > 0
         }
         

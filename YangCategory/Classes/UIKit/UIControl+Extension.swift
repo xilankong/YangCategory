@@ -1,16 +1,16 @@
 //
 //  UIControl+Extension.swift
-//  iReal
 //
-//  Created by lbencs on 22/01/2018.
-//  Copyright © 2018 lbencs. All rights reserved.
+//  Created by yanghuang on 2018/3/21.
 //
 
 import Foundation
 import UIKit
 
 extension UIControl {
-    @IBInspectable
+    
+    //设置高亮背景色
+    @objc
     var re_highlightedColor: UIColor? {
         get{
             return objc_getAssociatedObject(self, &AssociatedKeys.highlightedColor) as? UIColor
@@ -59,3 +59,4 @@ extension UIControl {
         }
     }
 }
+

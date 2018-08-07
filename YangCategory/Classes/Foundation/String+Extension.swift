@@ -49,9 +49,10 @@ extension String {
         return (self as NSString).longLongValue
     }
     
-    public var length: Int {
-        return Int((self as NSString).length)
-    }
+}
+
+//MARK: - 时间
+extension String {
     
     // 13位时间戳转换为Date
     public var dateFromTimeInterval_13: Date {
@@ -65,7 +66,12 @@ extension String {
         formatter.timeZone = NSTimeZone.local
         return formatter.date(from: self)
     }
+}
+
+//MARK: - 字典-json
+extension String {
     
+    //JSON 转字典
     public func converToDictionary() -> [String: Any] {
         
         guard let data = self.data(using: .utf8),
@@ -80,7 +86,7 @@ extension String {
 //MARK: - private
 extension String {
     
-    fileprivate func _deployWithSymbol(_ str: String) -> String {
+    private func _deployWithSymbol(_ str: String) -> String {
         let flo = (str as NSString).floatValue
         if flo == 0 {
             if str.contains("-") {
@@ -93,7 +99,7 @@ extension String {
         }
     }
     
-    fileprivate func _separator(_ str: String) -> String {
+    private func _separator(_ str: String) -> String {
         if !str.isPureNumber {
             return str
         }
@@ -120,7 +126,7 @@ extension String {
         return separatorStr
     }
     
-    fileprivate func _isPureNumber(_ str: String) -> Bool {
+    private func _isPureNumber(_ str: String) -> Bool {
         let scan: Scanner = Scanner(string: str)
         var val: Float = 0
         return scan.scanFloat(&val) && scan.isAtEnd
