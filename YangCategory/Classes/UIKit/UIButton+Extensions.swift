@@ -14,4 +14,5 @@ public extension UIButton {
         setImage(color?.re_toImage, for: state)
     }
 	
+    /// 文字
 }

@@ -9,7 +9,7 @@
     "file": "LICENSE"
   },
   "authors": {
-    "xilankong": "young.huang@jfz.com"
+    "xilankong": "xilankong@126.com"
   },
   "source": {
     "git": "https://github.com/xilankong/YangCategory.git",
@@ -21,7 +21,12 @@
   "subspecs": [
     {
       "name": "UIKit",
-      "source_files": "YangCategory/Classes/UIKit/**/*"
+      "source_files": "YangCategory/Classes/UIKit/**/*",
+      "dependencies": {
+        "SnapKit": [
+
+        ]
+      }
     },
     {
       "name": "Foundation",

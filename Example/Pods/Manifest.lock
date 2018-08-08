@@ -4,7 +4,8 @@ PODS:
     - YangCategory/Foundation (= 0.1.0)
     - YangCategory/UIKit (= 0.1.0)
   - YangCategory/Foundation (0.1.0)
-  - YangCategory/UIKit (0.1.0)
+  - YangCategory/UIKit (0.1.0):
+    - SnapKit
 
 DEPENDENCIES:
   - SnapKit
@@ -20,7 +21,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
-  YangCategory: 74d362114b2953564077ae03c0e939c69c631120
+  YangCategory: f8c255ae01d4b97188bfc19c0ed906caa63d9b4d
 
 PODFILE CHECKSUM: 8ff1664ae9f6fcc353890b664497c8d6e247f51e
 

@@ -9,6 +9,7 @@
 import UIKit
 import SnapKit
 import YangCategory
+
 class ViewController: UIViewController {
 
     let tableView = UITableView(frame: .zero, style: .grouped)
@@ -21,6 +22,7 @@ class ViewController: UIViewController {
     }
     
     func initUI() {
+        tableView.separatorStyle = .none
         view.addSubview(tableView)
         tableView.snp.makeConstraints {
             $0.edges.equalTo(self.view)
@@ -32,6 +34,7 @@ class ViewController: UIViewController {
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell") ?? UITableViewCell(style: .default, reuseIdentifier: "Cell")
             cell.textLabel?.text = "测试" + "\(indexPath.row)"
             cell.textLabel?.text.isNilOrEmpty
+            cell.contentView.re_addRightSeparateLine(topMargin: 30, bottomMargin: 30)
             return cell
         }
         

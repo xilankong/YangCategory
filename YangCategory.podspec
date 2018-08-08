@@ -16,6 +16,7 @@ TODO: Add long description of the pod here.
 
   s.subspec 'UIKit' do |ss|
     ss.source_files = 'YangCategory/Classes/UIKit/**/*'
+    ss.dependency 'SnapKit'
   end
 
   s.subspec 'Foundation' do |ss|

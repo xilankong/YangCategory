@@ -7,11 +7,9 @@
 import Foundation
 import UIKit
 
-public typealias Color = UIColor
+public extension UIColor {
 
-public extension Color {
-
-    /// Color to Image
+    /// 颜色转图片
     public var re_toImage: UIImage {
         let rect = CGRect(x: 0, y: 0, width: 1, height: 1)
         UIGraphicsBeginImageContextWithOptions(rect.size, true, 0)
@@ -23,11 +21,11 @@ public extension Color {
     }
     
     /// 随机颜色
-    public static var re_random: Color {
+    public static var re_random: UIColor {
         let r = Int(arc4random_uniform(255))
         let g = Int(arc4random_uniform(255))
         let b = Int(arc4random_uniform(255))
-        return Color(red: r, green: g, blue: b)!
+        return UIColor(red: r, green: g, blue: b)!
     }
     
     /// 颜色字符串
@@ -47,7 +45,7 @@ public extension Color {
 }
 
 // MARK: - Initializers
-public extension Color {
+public extension UIColor {
     
     
     /// 整数生成颜色
@@ -68,7 +66,6 @@ public extension Color {
         
         self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: trans)
     }
-    
     
     /// 字符串生成颜色
     ///
